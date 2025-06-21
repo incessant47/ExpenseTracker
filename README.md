@@ -28,7 +28,7 @@ Installation
 Clone the repository:
 
 bash
-git clone https://github.com/incessant47/ExpenseTracker
+git clone https://github.com/incessant47/ExpenseTracker.git
 cd expense-tracker
 Install required packages:
 

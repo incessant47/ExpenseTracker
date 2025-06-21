@@ -95,7 +95,7 @@ ExpenseTracker/
 ├── summary_report.csv      # Generated analysis report
 └── README.md               # This documentation
 ```
-## Security Features
+## Included Features
 ```text
 🔐 Input sanitization
 

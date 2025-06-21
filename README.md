@@ -21,7 +21,7 @@ A Python application that helps you track and analyze your personal expenses. Fe
 1. Clone the repository:
 ```bash
 git clone https://github.com/incessant47/ExpenseTracker.git
-cd expense-tracker
+cd ExpenseTracker
 ```
 2. Install required packages:
 ```bash

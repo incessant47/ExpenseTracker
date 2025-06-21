@@ -1,57 +1,44 @@
-Expense Tracker
-Overview
-This Expense Tracker is a Python application that helps users manage their personal finances by tracking expenses across different categories. It provides visual reports, spending analysis, and flexible filtering options to help users understand their spending habits.
+# Expense Tracker Application
 
-Features
-Total Spending Overview: Shows total expenses, highest expense, and lowest expense
+![Python](https://img.shields.io/badge/python-3.6%2B-blue)
+![Pandas](https://img.shields.io/badge/pandas-1.0%2B-orange)
+![Matplotlib](https://img.shields.io/badge/matplotlib-3.0%2B-green)
 
-Category Analysis: Breaks down spending by category with percentages
+## Overview
+A Python application that helps you track and analyze your personal expenses. Features include spending analysis, visual reports, and flexible filtering options to help you understand your spending habits.
 
-Visual Reports: Generates pie charts of expense distribution
+## Features
+- 📊 **Spending Summary**: Total expenses, highest/lowest expenses
+- 🗂️ **Category Analysis**: Breakdown by category with percentages
+- 📈 **Visual Reports**: Pie charts of expense distribution
+- 🔍 **Flexible Filtering**: By date range or specific month
+- ➕ **Expense Management**: Add new expenses with multiple date formats
+- 💾 **Data Export**: Save category analysis to CSV
+- 🔄 **Smart Categories**: Groups similar categories (e.g., "food" and "Food")
 
-Flexible Filtering: Filter expenses by date range or specific month
+## Installation
 
-Expense Management: Add new expenses with flexible date formats
-
-Data Export: Export category analysis to CSV
-
-Case-Insensitive Categories: Smartly groups similar categories (e.g., "food" and "Food")
-
-
-How to Run
-Prerequisites
-Python 3.6 or higher
-
-Required libraries: pandas, numpy, matplotlib
-
-Installation
-Clone the repository:
-
-bash
+1. Clone the repository:
+```bash
 git clone https://github.com/incessant47/ExpenseTracker.git
 cd expense-tracker
-Install required packages:
-
-bash
+```
+2. Install required packages:
+```bash
 pip install pandas numpy matplotlib
-Run the application:
-
-bash
+```
+3. Run the application:
+```bash
 python expense_tracker.py
-First Run Experience
-When you first run the application:
+```
+## Usage
+### First Run
+1. The program will scan for existing CSV files
+2. Select an existing file or press Enter to use default 'expenses.csv'
+3. New file will be created automatically if none exists
 
-It will scan for existing CSV files in the directory
-
-You can select an existing file or use the default 'expenses.csv'
-
-If no file exists, it will create a new one automatically
-
-Usage Examples
-Main Menu
-text
-Welcome to Expense Tracker! (Data file: expenses.csv)
-
+## Main Menu
+```text
 ===== EXPENSE TRACKER MENU =====
 1. Spending Summary
 2. Category Analysis
@@ -60,9 +47,9 @@ Welcome to Expense Tracker! (Data file: expenses.csv)
 5. Add Expense
 6. Export Report
 7. Exit
-Choose an option (1-7): 
-Adding an Expense
-text
+```
+## Adding an Expense
+```text
 Enter date (DD-MM-YYYY): 15-06-2025
 Enter category: Food
 Enter amount: 25.50
@@ -70,8 +57,10 @@ Enter description: Lunch at Cafe
 Expense added: 15-06-2025, Food, $25.50
 Save to file now? (y/n): y
 Expense securely saved!
-Spending Summary
-text
+```
+## Sample Outputs
+### Spending Summary:
+```text
 ===== SPENDING SUMMARY =====
 Total Expenses: $5400.00
 
@@ -87,8 +76,9 @@ Least Expensive Item:
   Amount: $50.00
   Description: Rickshaw fare
 ========================================
-Category Analysis
-text
+```
+### Category Analysis:
+```text
 ===== CATEGORY ANALYSIS =====
            Total Amount  Transaction Count  Percentage (%)
 Rent            5000.00                  1           92.59
@@ -96,39 +86,30 @@ Food             339.00                  2            6.28
 Utilities        200.00                  1            3.70
 Transport         50.00                  1            0.93
 ========================================
-File Structure
-text
+```
+## File Structure
+```text
 ExpenseTracker/
-├── expense_tracker.py      # Main application code
-├── expenses.csv            # Sample expense data file
-├── summary_report.csv      # Generated category analysis report
-└── README.md               # This documentation file
+├── expense_tracker.py      # Main application
+├── expenses.csv            # Sample expense data
+├── summary_report.csv      # Generated analysis report
+└── README.md               # This documentation
+```
+## Security Features
+```text
+🔐 Input sanitization
 
-Included Features
-Input sanitization
+🛡️ Path validation
 
-Data size limits to prevent resource exhaustion
+⚖️ Data size limits
 
-Secure file permissions
-
-Case-insensitive category normalization
-
-Customization
-You can adjust these parameters in the code:
-
-MAX_EXPENSE_AMOUNT: Maximum allowed expense amount (default: 1,000,000)
-
-MAX_DESCRIPTION_LENGTH: Max characters for descriptions (default: 100)
-
-MAX_EXPENSE_RECORDS: Max records to prevent memory issues (default: 10,000)
-
-PIE_CHART_THRESHOLD: Minimum percentage to show separately in pie chart (default: 3%)
-
-Troubleshooting
-If you encounter date format errors, use DD-MM-YYYY format
-
-Ensure you have write permissions in the application directory
-
-For large datasets, consider increasing MAX_EXPENSE_RECORDS
-
-Check logs for detailed error information
+🔑 Secure file permissions
+```
+## Customization
+Adjust these parameters in the code:
+```text
+MAX_EXPENSE_AMOUNT = 1000000    # Max expense amount ($1,000,000)
+MAX_DESCRIPTION_LENGTH = 100    # Max description characters
+MAX_EXPENSE_RECORDS = 10000     # Max records to store
+PIE_CHART_THRESHOLD = 3.0       # Min % to show separately in pie chart
+```
